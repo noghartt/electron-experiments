@@ -90,3 +90,8 @@ typings/
 
 # Electron-Forge
 out/
+
+# Sentry Config File
+.env*
+!.env.example
+sentry.properties

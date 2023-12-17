@@ -28,4 +28,17 @@ export const rules: Required<ModuleOptions>['rules'] = [
       },
     },
   },
+  {
+    test: /\.(ts|js)x?$/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        exclude: /node_modules/,
+        presets: [
+          '@babel/preset-react',
+          '@babel/preset-typescript',
+        ],
+      }
+    }
+  },
 ];
